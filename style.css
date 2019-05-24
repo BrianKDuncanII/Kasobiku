@@ -1,0 +1,55 @@
+@import url("https://rsms.me/inter/inter.css");
+#logo {
+  font-family: 'Fredoka One', cursive;
+  color: #d44d5c;
+}
+
+.divider {
+  display: inline-block;
+  width: 2px;
+  background-color: black;
+  margin: 0 10px;
+  height: 1em;
+}
+
+.article-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  text-indent: 2.0em;
+}
+
+.navbar a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.navbar a::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #000;
+  bottom: -4px;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+}
+
+.navbar a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+/*# sourceMappingURL=style.css.map */
